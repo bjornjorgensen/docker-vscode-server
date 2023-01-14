@@ -1,11 +1,11 @@
-FROM ubuntu:22.04
+FROM ubuntu:22.10
 
 # hadolint ignore=DL3008
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive && apt-get install -y --no-install-recommends \
     # vscode requirements
-    gnome-keyring wget curl python3-minimal ca-certificates \
+    gnome-keyring wget curl python3 ca-certificates \
     # development tools
-    git build-essential \
+    git build-essential openjdk-17-jdk-headless maven wget \    
     # clean up
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
