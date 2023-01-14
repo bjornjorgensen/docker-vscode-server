@@ -5,4 +5,4 @@ id: vscode-server
 about:
   title: VS Code Server Docker Image
   description: a Docker image for VS Code Server
-  repository: ahmadnassri/docker-vscode-server
+  repository: bjornjorgensen/docker-vscode-server
